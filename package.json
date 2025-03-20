@@ -1,0 +1,27 @@
+{
+  "name": "sslcommerz_poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohaimin41/sslcommerz_poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohaimin41/sslcommerz_poc/issues"
+  },
+  "homepage": "https://github.com/Mohaimin41/sslcommerz_poc#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "sslcommerz-lts": "^1.1.0"
+  }
+}
