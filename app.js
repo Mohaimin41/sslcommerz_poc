@@ -10,15 +10,20 @@ const is_live = false; //true for live, false for sandbox
 
 const port = 3030;
 app.use(bodyparser.json())
+app.get("/", (req, res) => {
+    res.json({
+        "message":"welcome to sslcommerz testing server, server is still running."
+    })
+});
 //sslcommerz init
 app.get("/init", (req, res) => {
     const data = {
         total_amount: 100,
         currency: "BDT",
         tran_id: "REF123", // use unique tran_id for each api call
-        success_url: "http://localhost:3030/success",
-        fail_url: "http://localhost:3030/fail",
-        cancel_url: "http://localhost:3030/cancel",
+        success_url: "http://localhost:3030/",
+        fail_url: "http://localhost:3030/",
+        cancel_url: "http://localhost:3030/",
         ipn_url: "http://localhost:3030/ipn",
         shipping_method: "Courier",
         product_name: "Computer.",
@@ -72,7 +77,9 @@ app.post("/ipn", (req, res) => {
     console.log("Printing ipn request from sslcommerz:\n");
     console.log(req.body);
     const data = {
-        val_id: 'ADGAHHGDAKJ456454', //that you go from sslcommerz response
+        val_id: req.body.val_id, //that you go from sslcommerz response
+        store_id : store_id,
+        store_passwd: store_passwd
     };
     const sslcz = new SSLCommerzPayment(store_id, store_passwd, is_live);
     sslcz.validate(data).then((data) => {
@@ -81,6 +88,7 @@ app.post("/ipn", (req, res) => {
         console.log("Printing validation reply from sslcommerz:\n");
         console.log(data);
     });
+    res.json({"message":"got your info, check logs"});
 });
 
 app.listen(port, () => {
