@@ -81,6 +81,8 @@ app.get("/validate", (req, res) => {
 
 app.post("/ipn", (req, res) => {
     console.log("Printing ipn request from sslcommerz:\n");
+    console.log(req.method)
+    console.log(req.headers)
     console.log(req.body);
     const data = {
         val_id: req.body.val_id, //that you go from sslcommerz response
