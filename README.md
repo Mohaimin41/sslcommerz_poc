@@ -7,3 +7,9 @@ sslcommerz transaction works in 3 steps:
 
 Here, `GET localhost:3030/init` will start session. Now, a local server cannot have its /ipn route open for sslcommerz to call. So we simulate the call using `curl -X POST -H 'Content-Type':'application/json'  --data @ipn_post.json localhost:3030/ipn`. 
 This will do the third step also, but since we do not have a valid validation id from sslcommerz, transaction fails. Next step would be putting the code in a server to test the /ipn route.
+
+##### Render Hosted Version(CURRENT):
+
+Here a `GET https://sslcommerz-poc.onrender.com/init` request will simulate the whole process. First backend will POST sslcommerz server to start a session. SSLCommerz will give a response and POST on the backend /ipn route. Now we should match the transaction details we sent in first POST and the details sslcommerz sent back in /ipn route. If they match we validate using a val_id field from the data sslcommerz sent, POSTing this field and other data to sslcommerz. A successful transaction will redirect to https://sslcommerz-poc.onrender.com/success page, success with risk will redirect to https://sslcommerz-poc.onrender.com/successrisky page and failed transactions will redirect to https://sslcommerz-poc.onrender.com/fail page. 
+
+**Note** we are simulating the sslcommerz hosted pages method for convenience. It can also be embedded in our own UI.

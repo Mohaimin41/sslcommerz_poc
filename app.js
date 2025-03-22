@@ -18,10 +18,20 @@ app.get("/", (req, res) => {
     })
 });
 
-app.post("/", (req, res) => {
+app.post("/success", (req, res) => {
     console.log("PRINTING IN / ROUTE");
     console.log(req.body);
-    res.json({ "Message": "got your success/failure/risk call, check logs" });
+    res.json({ "Message": "got your success call, check logs" });
+})
+app.post("/successrisky", (req, res) => {
+    console.log("PRINTING IN / ROUTE");
+    console.log(req.body);
+    res.json({ "Message": "got your risk call, check logs" });
+})
+app.post("/fail", (req, res) => {
+    console.log("PRINTING IN / ROUTE");
+    console.log(req.body);
+    res.json({ "Message": "got your failure call, check logs" });
 })
 //sslcommerz init
 app.get("/init", (req, res) => {
