@@ -10,7 +10,7 @@ const is_live = false; //true for live, false for sandbox
 
 const port = 3030;
 app.use(bodyparser.json());
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+app.use(bodyparser.urlencoded({ extended: true })); // support encoded bodies
 
 app.get("/", (req, res) => {
     res.json({
