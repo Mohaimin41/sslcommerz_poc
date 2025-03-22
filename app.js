@@ -39,9 +39,9 @@ app.get("/init", (req, res) => {
         total_amount: 100,
         currency: "BDT",
         tran_id: "REF123", // use unique tran_id for each api call
-        success_url: "https://sslcommerz-poc.onrender.com/",
-        fail_url: "https://sslcommerz-poc.onrender.com/",
-        cancel_url: "https://sslcommerz-poc.onrender.com/",
+        success_url: "https://sslcommerz-poc.onrender.com/success",
+        fail_url: "https://sslcommerz-poc.onrender.com/fail",
+        cancel_url: "https://sslcommerz-poc.onrender.com/successrisky",
         ipn_url: "https://sslcommerz-poc.onrender.com/ipn",
         shipping_method: "Courier",
         product_name: "Computer.",
