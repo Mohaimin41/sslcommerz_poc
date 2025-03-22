@@ -9,7 +9,9 @@ const store_passwd = process.env.STORE_PASWD;
 const is_live = false; //true for live, false for sandbox
 
 const port = 3030;
-app.use(bodyparser.json())
+app.use(bodyparser.json());
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
 app.get("/", (req, res) => {
     res.json({
         "message": "welcome to sslcommerz testing server, server is still running."
@@ -81,8 +83,8 @@ app.get("/validate", (req, res) => {
 
 app.post("/ipn", (req, res) => {
     console.log("Printing ipn request from sslcommerz:\n");
-    console.log(req.method)
-    console.log(req.headers)
+    // console.log(req.method)
+    // console.log(req.headers)
     console.log(req.body);
     const data = {
         val_id: req.body.val_id, //that you go from sslcommerz response
