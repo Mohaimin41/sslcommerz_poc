@@ -12,13 +12,14 @@ const port = 3030;
 app.use(bodyparser.json())
 app.get("/", (req, res) => {
     res.json({
-        "message":"welcome to sslcommerz testing server, server is still running."
+        "message": "welcome to sslcommerz testing server, server is still running."
     })
 });
 
 app.post("/", (req, res) => {
     console.log("PRINTING IN / ROUTE");
     console.log(req.body);
+    res.json({ "Message": "got your success/failure/risk call, check logs" });
 })
 //sslcommerz init
 app.get("/init", (req, res) => {
@@ -83,7 +84,7 @@ app.post("/ipn", (req, res) => {
     console.log(req.body);
     const data = {
         val_id: req.body.val_id, //that you go from sslcommerz response
-        store_id : store_id,
+        store_id: store_id,
         store_passwd: store_passwd
     };
     const sslcz = new SSLCommerzPayment(store_id, store_passwd, is_live);
@@ -93,7 +94,7 @@ app.post("/ipn", (req, res) => {
         console.log("Printing validation reply from sslcommerz:\n");
         console.log(data);
     });
-    res.json({"message":"got your info, check logs"});
+    res.json({ "message": "got your info, check logs" });
 });
 
 app.listen(port, () => {
