@@ -15,6 +15,11 @@ app.get("/", (req, res) => {
         "message":"welcome to sslcommerz testing server, server is still running."
     })
 });
+
+app.post("/", (req, res) => {
+    console.log("PRINTING IN / ROUTE");
+    console.log(req.body);
+})
 //sslcommerz init
 app.get("/init", (req, res) => {
     const data = {
