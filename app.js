@@ -19,17 +19,17 @@ app.get("/", (req, res) => {
 });
 
 app.post("/success", (req, res) => {
-    console.log("PRINTING IN / ROUTE");
+    console.log("PRINTING IN /success ROUTE");
     console.log(req.body);
     res.json({ "Message": "got your success call, check logs" });
 })
-app.post("/successrisky", (req, res) => {
-    console.log("PRINTING IN / ROUTE");
+app.post("/cancel", (req, res) => {
+    console.log("PRINTING IN /cancel ROUTE");
     console.log(req.body);
-    res.json({ "Message": "got your risk call, check logs" });
+    res.json({ "Message": "got your cancel call, check logs" });
 })
 app.post("/fail", (req, res) => {
-    console.log("PRINTING IN / ROUTE");
+    console.log("PRINTING IN /fail ROUTE");
     console.log(req.body);
     res.json({ "Message": "got your failure call, check logs" });
 })
@@ -41,7 +41,7 @@ app.get("/init", (req, res) => {
         tran_id: "REF123", // use unique tran_id for each api call
         success_url: "https://sslcommerz-poc.onrender.com/success",
         fail_url: "https://sslcommerz-poc.onrender.com/fail",
-        cancel_url: "https://sslcommerz-poc.onrender.com/successrisky",
+        cancel_url: "https://sslcommerz-poc.onrender.com/cancel",
         ipn_url: "https://sslcommerz-poc.onrender.com/ipn",
         shipping_method: "Courier",
         product_name: "Computer.",
