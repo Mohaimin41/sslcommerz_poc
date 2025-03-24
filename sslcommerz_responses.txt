@@ -1,0 +1,453 @@
+Printing init response from sslcommerz:
+{
+  status: 'SUCCESS',
+  failedreason: '',
+  sessionkey: 'F80CFCB3E7FD0A6005DE013B2BA4690A',
+  gw: {
+    visa: 'city_visa,ebl_visa,visacard',
+    master: 'city_master,ebl_master,mastercard',
+    amex: 'city_amex,amexcard',
+    othercards: 'qcash,fastcash',
+    internetbanking: 'city,abbank,bankasia,ibbl,mtbl,tapnpay,eblsky,instapay,pmoney,woori,modhumoti,fsibl',
+    mobilebanking: 'dbblmobilebanking,bkash,nagad,abbank,ibbl,tap,upay,okaywallet,cellfine,mcash'
+  },
+  redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtml.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=',
+  directPaymentURLBank: '',
+  directPaymentURLCard: '',
+  directPaymentURL: '',
+  redirectGatewayURLFailed: '',
+  GatewayPageURL: 'https://sandbox.sslcommerz.com/EasyCheckOut/testcdef80cfcb3e7fd0a6005de013b2ba4690a',
+  storeBanner: 'https://sandbox.sslcommerz.com/stores/logos/demoLogo.png',
+  storeLogo: 'https://sandbox.sslcommerz.com/stores/logos/demoLogo.png',
+  store_name: 'Demo',
+  desc: [
+    {
+      name: 'AMEX',
+      type: 'amex',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/amex.png',
+      gw: 'amexcard',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=amexcard'
+    },
+    {
+      name: 'VISA',
+      type: 'visa',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/visa.png',
+      gw: 'visacard',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=visavard'
+    },
+    {
+      name: 'MASTER',
+      type: 'master',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/master.png',
+      gw: 'mastercard',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=mastercard'
+    },
+    {
+      name: 'AMEX-City Bank',
+      type: 'amex',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/amex.png',
+      gw: 'city_amex',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=city_amex'
+    },
+    {
+      name: 'QCash',
+      type: 'othercards',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/qcash.png',
+      gw: 'qcash',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=qcash'
+    },
+    {
+      name: 'Fast Cash',
+      type: 'othercards',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/fastcash.png',
+      gw: 'fastcash'
+    },
+    {
+      name: 'bKash',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/bkash.png',
+      gw: 'bkash',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=bkash'
+    },
+    {
+      name: 'Nagad',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/nagad.png',
+      gw: 'nagad',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=nagad'
+    },
+    {
+      name: 'DBBL Mobile Banking',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/dbblmobilebank.png',
+      gw: 'dbblmobilebanking',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=dbblmobilebanking'
+    },
+    {
+      name: 'AB Direct',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/abbank.png',
+      gw: 'abbank',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=abbank'
+    },
+    {
+      name: 'AB Direct',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/abbank.png',
+      gw: 'abbank',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=abbank'
+    },
+    {
+      name: 'IBBL',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/ibbl.png',
+      gw: 'ibbl',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=ibbl'
+    },
+    {
+      name: 'Citytouch',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/citytouch.png',
+      gw: 'city',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=city'
+    },
+    {
+      name: 'MTBL',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/mtbl.png',
+      gw: 'mtbl',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=mtbl'
+    },
+    {
+      name: 'Bank Asia',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/bankasia.png',
+      gw: 'bankasia',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=bankasia'
+    },
+    {
+      name: 'VISA-Eastern Bank Limited',
+      type: 'visa',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/visa.png',
+      gw: 'ebl_visa',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=ebl_visa'
+    },
+    {
+      name: 'MASTER-Eastern Bank Limited',
+      type: 'master',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/master.png',
+      gw: 'ebl_master',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=ebl_master'
+    },
+    {
+      name: 'VISA-City Bank',
+      type: 'visa',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/visa.png',
+      gw: 'city_visa',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=city_visa'
+    },
+    {
+      name: 'MASTER-City bank',
+      type: 'master',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/master.png',
+      gw: 'city_master',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=city_master'
+    },
+    {
+      name: 'TAP',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/tap.png',
+      gw: 'mobilemoney',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=mobilemoney'
+    },
+    {
+      name: 'upay',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/upay.png',
+      gw: 'upay',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=upay'
+    },
+    {
+      name: 'okaywallet',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/okwallet.png',
+      gw: 'okaywallet',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=okaywallet'
+    },
+    {
+      name: 'cellfine',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/cellfin.png',
+      gw: 'cellfine',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=cellfine'
+    },
+    {
+      name: 'mcash',
+      type: 'mobilebanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/ibblmobile.png',
+      gw: 'ibbl_m',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=ibbl_m'
+    },
+    {
+      name: 'tapnpay',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/tapnpay.png',
+      gw: 'tapnpay',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=tapnpay'
+    },
+    {
+      name: 'eblsky',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/eblsky.png',
+      gw: 'eblsky',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=eblsky'
+    },
+    {
+      name: 'instapay',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/instapay.png',
+      gw: 'instapay',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=instapay'
+    },
+    {
+      name: 'pmoney',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/pmoney.png',
+      gw: 'pmoney',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=pmoney'
+    },
+    {
+      name: 'woori',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/woori.png',
+      gw: 'woori',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=woori'
+    },
+    {
+      name: 'modhumoti',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/modhumoti.png',
+      gw: 'modhumoti',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=modhumoti'
+    },
+    {
+      name: 'fsibl',
+      type: 'internetbanking',
+      logo: 'https://sandbox.sslcommerz.com/gwprocess/v4/image/gw/FsiblCloudLogo.png',
+      gw: 'fsibl',
+      r_flag: '1',
+      redirectGatewayURL: 'https://sandbox.sslcommerz.com/gwprocess/v4/bankgw/indexhtmlOTP.php?mamount=100.00&ssl_id=250323144351CcPsKxemH1Mpg4u&Q=REDIRECT&SESSIONKEY=F80CFCB3E7FD0A6005DE013B2BA4690A&tran_type=success&cardname=fsibl'
+    }
+  ],
+  is_direct_pay_enable: '0'
+}
+Redirecting to:  https://sandbox.sslcommerz.com/EasyCheckOut/testcdef80cfcb3e7fd0a6005de013b2ba4690a
+
+Printing ipn request from sslcommerz:
+{
+  amount: '100.00',
+  bank_tran_id: '250323144424u0nn1caFVPt2hSU',
+  base_fair: '0.00',
+  card_brand: 'MOBILEBANKING',
+  card_issuer: 'BKash Mobile Banking',
+  card_issuer_country: 'Bangladesh',
+  card_issuer_country_code: 'BD',
+  card_no: '',
+  card_sub_brand: 'Classic',
+  card_type: 'BKASH-BKash',
+  currency: 'BDT',
+  currency_amount: '100.00',
+  currency_rate: '1.0000',
+  currency_type: 'BDT',
+  error: '',
+  risk_level: '0',
+  risk_title: 'Safe',
+  status: 'VALID',
+  store_amount: '97.50',
+  store_id: 'wiki67dac916c8044',
+  tran_date: '2025-03-23 14:43:51',
+  tran_id: 'REF123',
+  val_id: '25032314442404hnPr8wYiRWQRR',
+  value_a: '',
+  value_b: '',
+  value_c: '',
+  value_d: '',
+  verify_sign: '8d1787942c4011cb27934e421e0a2779',
+  verify_sign_sha2: '8713aece6c63baae5ea06e47bfcc5a2e4e0eb06b9ef603e934d413f8ce533bda',
+  verify_key: 'amount,bank_tran_id,base_fair,card_brand,card_issuer,card_issuer_country,card_issuer_country_code,card_no,card_sub_brand,card_type,currency,currency_amount,currency_rate,currency_type,error,risk_level,risk_title,status,store_amount,store_id,tran_date,tran_id,val_id,value_a,value_b,value_c,value_d'
+}
+Printing validation reply from sslcommerz:
+{
+  status: 'VALID',
+  tran_date: '2025-03-23 14:43:51',
+  tran_id: 'REF123',
+  val_id: '25032314442404hnPr8wYiRWQRR',
+  amount: '100.00',
+  store_amount: '97.5',
+  currency: 'BDT',
+  bank_tran_id: '250323144424u0nn1caFVPt2hSU',
+  card_type: 'BKASH-BKash',
+  card_no: '',
+  card_issuer: 'BKash Mobile Banking',
+  card_brand: 'MOBILEBANKING',
+  card_category: 'MOBILE',
+  card_sub_brand: '',
+  card_issuer_country: 'Bangladesh',
+  card_issuer_country_code: 'BD',
+  currency_type: 'BDT',
+  currency_amount: '100.00',
+  currency_rate: '1.0000',
+  base_fair: '0.00',
+  value_a: '',
+  value_b: '',
+  value_c: '',
+  value_d: '',
+  emi_instalment: '0',
+  emi_amount: '0.00',
+  emi_description: '',
+  emi_issuer: 'BKash Mobile Banking',
+  account_details: '',
+  risk_title: 'Safe',
+  risk_level: '0',
+  discount_percentage: '0',
+  discount_amount: '0.00',
+  discount_remarks: '',
+  APIConnect: 'DONE',
+  validated_on: '2025-03-23 14:44:25',
+  gw_version: '',
+  offer_avail: 1,
+  card_ref_id: 'dc1da4f52669828139e81ef5eb0f48a5a99ea054a131e00a562887d455417dd914',
+  isTokeizeSuccess: 0,
+  campaign_code: ''
+}
+PRINTING IN /success ROUTE
+{
+  tran_id: 'REF123',
+  val_id: '25032314442404hnPr8wYiRWQRR',
+  amount: '100.00',
+  card_type: 'BKASH-BKash',
+  store_amount: '97.50',
+  card_no: '',
+  bank_tran_id: '250323144424u0nn1caFVPt2hSU',
+  status: 'VALID',
+  tran_date: '2025-03-23 14:43:51',
+  error: '',
+  currency: 'BDT',
+  card_issuer: 'BKash Mobile Banking',
+  card_brand: 'MOBILEBANKING',
+  card_sub_brand: 'Classic',
+  card_issuer_country: 'Bangladesh',
+  card_issuer_country_code: 'BD',
+  store_id: 'wiki67dac916c8044',
+  verify_sign: '8d1787942c4011cb27934e421e0a2779',
+  verify_key: 'amount,bank_tran_id,base_fair,card_brand,card_issuer,card_issuer_country,card_issuer_country_code,card_no,card_sub_brand,card_type,currency,currency_amount,currency_rate,currency_type,error,risk_level,risk_title,status,store_amount,store_id,tran_date,tran_id,val_id,value_a,value_b,value_c,value_d',
+  verify_sign_sha2: '8713aece6c63baae5ea06e47bfcc5a2e4e0eb06b9ef603e934d413f8ce533bda',
+  currency_type: 'BDT',
+  currency_amount: '100.00',
+  currency_rate: '1.0000',
+  base_fair: '0.00',
+  value_a: '',
+  value_b: '',
+  value_c: '',
+  value_d: '',
+  subscription_id: '',
+  risk_level: '0',
+  risk_title: 'Safe'
+}
+
+//success with risk
+PRINTING IN /success ROUTE
+{
+  tran_id: 'REF123',
+  val_id: '250323144726LZ7Gfg8zmnOj7DI',
+  amount: '100.00',
+  card_type: 'BKASH-BKash',
+  store_amount: '97.50',
+  card_no: '',
+  bank_tran_id: '250323144726GPAd0fnUsFQxF99',
+  status: 'VALID',
+  tran_date: '2025-03-23 14:47:10',
+  error: '',
+  currency: 'BDT',
+  card_issuer: 'BKash Mobile Banking',
+  card_brand: 'MOBILEBANKING',
+  card_sub_brand: 'Classic',
+  card_issuer_country: 'Bangladesh',
+  card_issuer_country_code: 'BD',
+  store_id: 'wiki67dac916c8044',
+  verify_sign: '8d7c06a8844e1d354f4dc9ed74c0cae8',
+  verify_key: 'amount,bank_tran_id,base_fair,card_brand,card_issuer,card_issuer_country,card_issuer_country_code,card_no,card_sub_brand,card_type,currency,currency_amount,currency_rate,currency_type,error,risk_level,risk_title,status,store_amount,store_id,tran_date,tran_id,val_id,value_a,value_b,value_c,value_d',
+  verify_sign_sha2: 'e3e81d2d79aa64288fb862d57b796dbcb4f78b096bc631004ee78becd8a18270',
+  currency_type: 'BDT',
+  currency_amount: '100.00',
+  currency_rate: '1.0000',
+  base_fair: '0.00',
+  value_a: '',
+  value_b: '',
+  value_c: '',
+  value_d: '',
+  subscription_id: '',
+  risk_level: '1',
+  risk_title: 'Not Safe'
+}
+
+//fail
+PRINTING IN /fail ROUTE
+{
+  tran_id: 'REF123',
+  error: 'Unattempted or Expired',
+  status: 'FAILED',
+  bank_tran_id: '2503231450270MlRzBhMzoaCyLq',
+  currency: 'BDT',
+  tran_date: '2025-03-23 14:49:44',
+  amount: '100.00',
+  store_id: 'wiki67dac916c8044',
+  card_type: '',
+  card_no: '',
+  card_issuer: 'BKash Mobile Banking',
+  card_brand: 'MOBILEBANKING',
+  card_sub_brand: 'Classic',
+  card_issuer_country: 'Bangladesh',
+  card_issuer_country_code: 'BD',
+  subscription_id: '',
+  currency_type: 'BDT',
+  currency_amount: '100.00',
+  currency_rate: '1.0000',
+  base_fair: '0.00',
+  value_a: '',
+  value_b: '',
+  value_c: '',
+  value_d: '',
+  verify_sign: '32f9eab2e3738c34ccf540ea95b0b131',
+  verify_sign_sha2: 'b7a2a5acfd14b0b122dc34e1725f2063d87bfee01774b8bee1b5566f769ea922',
+  verify_key: 'amount,bank_tran_id,base_fair,card_brand,card_issuer,card_issuer_country,card_issuer_country_code,card_no,card_sub_brand,card_type,currency,currency_amount,currency_rate,currency_type,error,status,store_id,tran_date,tran_id,value_a,value_b,value_c,value_d'
+}
