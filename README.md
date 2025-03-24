@@ -12,4 +12,19 @@ This will do the third step also, but since we do not have a valid validation id
 
 Here a `GET https://sslcommerz-poc.onrender.com/init` request will simulate the whole process. First backend will POST sslcommerz server to start a session. SSLCommerz will give a response and POST on the backend /ipn route. Now we should match the transaction details we sent in first POST and the details sslcommerz sent back in /ipn route. If they match we validate using a val_id field from the data sslcommerz sent, POSTing this field and other data to sslcommerz. A successful transaction will redirect to https://sslcommerz-poc.onrender.com/success page, cancel will redirect to https://sslcommerz-poc.onrender.com/cancel page and failed transactions will redirect to https://sslcommerz-poc.onrender.com/fail page. 
 
+**Testing Credit Cards, OTPs**
+- VISA
+Card Number: 4111111111111111
+Exp: 12/25
+CVV: 111
+- Mastercard
+Card Number: 5111111111111111
+Exp: 12/25
+CVV: 111
+- American Express
+Card Number: 371111111111111
+Exp: 12/25
+CVV: 111
+- Mobile OTP: 111111 or 123456
+  
 **Note** we are simulating the sslcommerz hosted pages method for convenience. It can also be embedded in our own UI.
