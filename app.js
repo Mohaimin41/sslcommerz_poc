@@ -43,6 +43,7 @@ app.get("/init", (req, res) => {
         fail_url: "https://sslcommerz-poc.onrender.com/fail",
         cancel_url: "https://sslcommerz-poc.onrender.com/cancel",
         ipn_url: "https://sslcommerz-poc.onrender.com/ipn",
+        shipping_method: "NO",
         product_name: "brainlytic.",
         product_category: "Online_course",
         product_profile: "non-physical-goods",
