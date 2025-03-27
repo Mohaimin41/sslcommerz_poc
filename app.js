@@ -49,6 +49,7 @@ app.get("/init", (req, res) => {
         cus_name: "Customer Name",
         cus_email: "customer@example.com",
         cus_add1: "Dhaka",
+        cus_phone: "01812345678",
         
     };
     const sslcz = new SSLCommerzPayment(store_id, store_passwd, is_live);
