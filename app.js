@@ -49,7 +49,6 @@ app.get("/init", (req, res) => {
         product_profile: "non-physical-goods",
         cus_name: "Customer Name",
         cus_email: "customer@example.com",
-        cus_add1: "Dhaka",
         cus_phone: "01812345678",
         
     };
